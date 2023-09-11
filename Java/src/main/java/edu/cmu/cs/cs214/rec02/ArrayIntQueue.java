@@ -75,6 +75,8 @@ public class ArrayIntQueue implements IntQueue {
   public boolean isEmpty() {
     /****************************** bug ****************************/
     // return size >= 0;
+    /*************************************************************** */
+
     return size == 0;
   }
 
@@ -85,6 +87,8 @@ public class ArrayIntQueue implements IntQueue {
     if (size == 0) {
       return null;
     }
+    /*************************************************************** */
+    
     return elementData[head];
   }
 
